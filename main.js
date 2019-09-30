@@ -15,10 +15,9 @@ const updateWithAdd = async (event) => {
   document.querySelector('#result').innerHTML = ''
   if (document.querySelector('#students').checkValidity() && document.querySelector('#secondNumber').checkValidity()) {
     const regex = /[^a-zA-Z_]/g
-    const s = document.querySelector('#guest').value.replace(regex, '')
     const i = parseInt(document.querySelector('#students').value)
     const j = parseInt(document.querySelector('#sections').value)
-    const ans = `${s}, your result is ${add(i, j)}.`
+    const ans = `${s}, your result is ${divide(i, j)}.`
     document.querySelector('#result').innerHTML = ans
   }
 }
