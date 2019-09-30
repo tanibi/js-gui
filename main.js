@@ -13,8 +13,7 @@ const validate = async (event) => {
 
 const updateWithAdd = async (event) => {
   document.querySelector('#result').innerHTML = ''
-  if (document.querySelector('#students').checkValidity() && document.querySelector('#secondNumber').checkValidity()) {
-    const regex = /[^a-zA-Z_]/g
+  if (document.querySelector('#students').checkValidity() && document.querySelector('#sections').checkValidity()) {
     const i = parseInt(document.querySelector('#students').value)
     const j = parseInt(document.querySelector('#sections').value)
     const ans = `${s}, your result is ${divide(i, j)}.`
