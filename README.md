@@ -3,5 +3,5 @@
 
 ## Links
 
-- [Demo](https://profcase.github.io/js-gui/)
-- [Source](https://github.com/profcase/js-gui)
+- [Link](https://tanibi.github.io/js-gui/)
+- [Repo](https://github.com/tanibi/js-gui)
