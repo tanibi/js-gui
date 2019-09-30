@@ -16,7 +16,7 @@ const updateWithAdd = async (event) => {
   if (document.querySelector('#students').checkValidity() && document.querySelector('#sections').checkValidity()) {
     const i = parseInt(document.querySelector('#students').value)
     const j = parseInt(document.querySelector('#sections').value)
-    const ans = `${s}, your result is ${divide(i, j)}.`
+    const ans = `$Your result is ${divide(i, j)}.`
     document.querySelector('#result').innerHTML = ans
   }
 }
