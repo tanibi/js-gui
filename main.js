@@ -1,4 +1,4 @@
-const divide = (x, y) => { return x / y }
+const average = (x, y) => { return x / y }
 
 const validate = async (event) => {
   console.log(`triggered validate on ${event.target.id}`)
@@ -16,7 +16,7 @@ const updateWithAdd = async (event) => {
   if (document.querySelector('#students').checkValidity() && document.querySelector('#sections').checkValidity()) {
     const i = parseInt(document.querySelector('#students').value)
     const j = parseInt(document.querySelector('#sections').value)
-    const ans = `$Your result is ${divide(i, j)}.`
+    const ans = `Average number of students per section is: ${average(i, j)}.`
     document.querySelector('#result').innerHTML = ans
   }
 }
